@@ -10,3 +10,17 @@ puts "Exercise 7"
 puts "----------"
 
 # Your code goes here ...
+
+puts "State store name"
+new_name = gets.chomp
+
+new_store = Store.create(
+  name:new_name,
+  annual_revenue: nil, 
+  mens_apparel: nil, 
+  womens_apparel: nil
+)
+
+new_store.errors.full_messages.each do |member|
+  p member
+end

@@ -19,7 +19,7 @@ richmond = Store.create(
   womens_apparel:true
 )
 
-gastown = Store.create(
+@gastown = Store.create(
   name:"Gastown",
   annual_revenue:190000, 
   mens_apparel:true, 
